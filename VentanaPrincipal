@@ -1,0 +1,420 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Calcu;
+
+/**
+ *
+ * @author dani_
+ */
+public class VentanaPrincipal extends javax.swing.JFrame {
+    
+    //Creates new form VentanaPrincipal
+    public VentanaPrincipal() {initComponents();}
+    
+    //Variables
+    String num1, num2, signo;
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        PanelResultado = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        BSuma = new javax.swing.JButton();
+        BResta = new javax.swing.JButton();
+        BMulti = new javax.swing.JButton();
+        BDivi = new javax.swing.JButton();
+        BExpo = new javax.swing.JButton();
+        BSiete = new javax.swing.JButton();
+        BOcho = new javax.swing.JButton();
+        BNueve = new javax.swing.JButton();
+        BCuatro = new javax.swing.JButton();
+        BCinco = new javax.swing.JButton();
+        BSeis = new javax.swing.JButton();
+        BUno = new javax.swing.JButton();
+        BDos = new javax.swing.JButton();
+        BTres = new javax.swing.JButton();
+        BCero = new javax.swing.JButton();
+        BLimpiar = new javax.swing.JButton();
+        Bigual = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        PanelResultado.setEditable(false);
+        PanelResultado.setText(" ");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PanelResultado)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PanelResultado, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        );
+
+        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        BSuma.setText("+");
+        BSuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSumaActionPerformed(evt);
+            }
+        });
+
+        BResta.setText("-");
+        BResta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BRestaActionPerformed(evt);
+            }
+        });
+
+        BMulti.setText("x");
+        BMulti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BMultiActionPerformed(evt);
+            }
+        });
+
+        BDivi.setText("/");
+        BDivi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BDiviActionPerformed(evt);
+            }
+        });
+
+        BExpo.setText("^");
+        BExpo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BExpoActionPerformed(evt);
+            }
+        });
+
+        BSiete.setText("7");
+        BSiete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSieteActionPerformed(evt);
+            }
+        });
+
+        BOcho.setText("8");
+        BOcho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BOchoActionPerformed(evt);
+            }
+        });
+
+        BNueve.setText("9");
+        BNueve.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BNueveActionPerformed(evt);
+            }
+        });
+
+        BCuatro.setText("4");
+        BCuatro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCuatroActionPerformed(evt);
+            }
+        });
+
+        BCinco.setText("5");
+        BCinco.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCincoActionPerformed(evt);
+            }
+        });
+
+        BSeis.setText("6");
+        BSeis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BSeisActionPerformed(evt);
+            }
+        });
+
+        BUno.setText("1");
+        BUno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BUnoActionPerformed(evt);
+            }
+        });
+
+        BDos.setText("2");
+        BDos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BDosActionPerformed(evt);
+            }
+        });
+
+        BTres.setText("3");
+        BTres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTresActionPerformed(evt);
+            }
+        });
+
+        BCero.setText("0");
+        BCero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCeroActionPerformed(evt);
+            }
+        });
+
+        BLimpiar.setText("CE");
+        BLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BLimpiarActionPerformed(evt);
+            }
+        });
+
+        Bigual.setText("=");
+        Bigual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BigualActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(BSuma)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BResta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BMulti)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BDivi)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BExpo))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BSiete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BCuatro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BUno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BLimpiar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE))
+                        .addGap(14, 14, 14)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BCero, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
+                            .addComponent(BDos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BCinco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BOcho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BSeis, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BNueve, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BTres, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Bigual, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BSuma)
+                    .addComponent(BResta)
+                    .addComponent(BMulti)
+                    .addComponent(BDivi)
+                    .addComponent(BExpo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BNueve)
+                    .addComponent(BOcho)
+                    .addComponent(BSiete))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BCuatro)
+                    .addComponent(BCinco)
+                    .addComponent(BSeis))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BUno)
+                    .addComponent(BDos)
+                    .addComponent(BTres))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BCero)
+                    .addComponent(BLimpiar)
+                    .addComponent(Bigual))
+                .addGap(0, 8, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void BSieteActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "7");
+    }                                      
+
+    private void BLimpiarActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        PanelResultado.setText("");
+    }                                        
+
+    private void BigualActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        String resultado; 
+        
+        num2 = PanelResultado.getText();
+        
+        if(!num2.equals("")){
+            resultado = Calcula(num1,num2,signo);
+            PanelResultado.setText(resultado);
+        }
+        
+    }                                      
+
+    private void BCeroActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "0");
+        
+    }                                     
+
+    private void BUnoActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "1");
+    }                                    
+
+    private void BDosActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "2");
+    }                                    
+
+    private void BTresActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "3");
+    }                                     
+
+    private void BCuatroActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "4");
+    }                                       
+
+    private void BCincoActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "5");
+    }                                      
+
+    private void BSeisActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "6");
+    }                                     
+
+    private void BOchoActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "8");
+    }                                     
+
+    private void BNueveActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        PanelResultado.setText(PanelResultado.getText() + "9");
+    }                                      
+
+    private void BSumaActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        if(!PanelResultado.equals("")){
+            num1 = PanelResultado.getText();             
+            signo = "+";
+            PanelResultado.setText("");
+        }
+    }                                     
+
+    private void BRestaActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        if(!PanelResultado.equals("")){
+            num1 = PanelResultado.getText();             
+            signo = "-";
+            PanelResultado.setText("");
+        }
+    }                                      
+
+    private void BMultiActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        if(!PanelResultado.equals("")){
+            num1 = PanelResultado.getText();             
+            signo = "*";
+            PanelResultado.setText("");
+        }
+    }                                      
+
+    private void BDiviActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        if(!PanelResultado.equals("")){
+            num1 = PanelResultado.getText();             
+            signo = "/";
+            PanelResultado.setText("");
+        }
+    }                                     
+
+    private void BExpoActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        if(!PanelResultado.equals("")){
+            num1 = PanelResultado.getText();             
+            signo = "^";
+            PanelResultado.setText("");
+        }
+    }                                     
+    
+    //Función calculadora
+    private static String Calcula(String numero1, String numero2, String signo){
+        double resultado = 0.0;
+        String res; //La función devuelve este valor
+        
+        if(signo.equals("+")){
+            resultado = Double.parseDouble(numero1) + Double.parseDouble(numero2);
+        }else if(signo.equals("-")){
+            resultado = Double.parseDouble(numero1) - Double.parseDouble(numero2);
+        }else if(signo.equals("*")){
+            resultado = Double.parseDouble(numero1) * Double.parseDouble(numero2);            
+        }else if(signo.equals("/")){
+            resultado = Double.parseDouble(numero1) / Double.parseDouble(numero2);            
+        }else if(signo.equals("^")){
+            resultado = Integer.parseInt(numero2) * Integer.parseInt(numero2);
+        }
+        res = String.valueOf(resultado);
+        return res;
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton BCero;
+    private javax.swing.JButton BCinco;
+    private javax.swing.JButton BCuatro;
+    private javax.swing.JButton BDivi;
+    private javax.swing.JButton BDos;
+    private javax.swing.JButton BExpo;
+    private javax.swing.JButton BLimpiar;
+    private javax.swing.JButton BMulti;
+    private javax.swing.JButton BNueve;
+    private javax.swing.JButton BOcho;
+    private javax.swing.JButton BResta;
+    private javax.swing.JButton BSeis;
+    private javax.swing.JButton BSiete;
+    private javax.swing.JButton BSuma;
+    private javax.swing.JButton BTres;
+    private javax.swing.JButton BUno;
+    private javax.swing.JButton Bigual;
+    private javax.swing.JTextField PanelResultado;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    // End of variables declaration                   
+}
